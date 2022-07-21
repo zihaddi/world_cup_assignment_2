@@ -366,7 +366,7 @@ footer
 footer .foot-box
 {
   display: flex;
-  flex-wrap: wrap;
+ 
   justify-content: space-around;
   font-size :1vw;
   line-height: normal;
@@ -449,12 +449,12 @@ footer .foot-box
   }
   .section-2 .nav button
   {
-    height: 90px;
+    height: 80px;
     width: 120px;
     border-radius: 8px;
-    font-size: 1.5vw;
     border: none;
     border: 1px solid rgb(165, 153, 153);
+    font-size: 13px;
     
     
     
@@ -515,7 +515,7 @@ footer .foot-box
   background-color: black;
   color: #B9B9B9;
   text-align: center;
-  height: 600px;
+  height: 700px;
   margin-top: 30px;
 }
 
@@ -523,10 +523,13 @@ footer .foot-box
 {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-around;
   font-size :1vw;
   line-height: normal;
 }
-  
+.space
+{
+ padding-bottom: 20px;
+}
+
 }

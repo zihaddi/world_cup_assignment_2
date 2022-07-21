@@ -410,6 +410,7 @@ footer .foot-box
     border-radius: 8px;
     border: none;
     border: 1px solid rgb(165, 153, 153);
+    font-size: 13px;
     
     
     
@@ -432,33 +433,49 @@ footer .foot-box
   justify-content: space-between;
   padding: 2%;
   color: gray;
+  
 }
-
+.article span p, i
+{
+  font-size: 15px;
+}
 .article img
 {
   width: 100%;
 }
 .article> p,h4
 {
- margin-right: auto;
- width: 60%;
+ margin-left: 0%;
+ margin-right: 0%;
+ width: 90%;
   
 }
 .article
 {
   border:1px solid  rgb(197, 181, 181);
   border-radius: 10px;
-  font-size:1.5vw;
+  font-size:25px;
  
 }
 .article >p
 {
   border: 1px solid black;
-  width: 50%;
-  text-align: center;
+  width: 40%;
+  
   margin-left: 10px;
   border-radius: 8px;
+  font-size:20px;
 }
+
+footer
+{
+  background-color: black;
+  color: #B9B9B9;
+  text-align: center;
+  height: 600px;
+  margin-top: 100px;
+}
+
 footer .foot-box
 {
   display: flex;
