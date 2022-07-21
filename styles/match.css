@@ -48,11 +48,13 @@ p
 {
   margin-right: 0%;
   padding-bottom: 0%;
+ 
 }
 .slide-pic img
 {
 width: 100%;
 margin-bottom: 0%;
+
 }
 /* .btn-style
 {
@@ -76,7 +78,7 @@ margin-bottom: 0%;
   cursor: pointer;
   display: inline-block;
   font-style: italic;
-  font-size: 15px;
+  font-size: 15vm;
 }
 .button-2 {
   color: #fff;
@@ -139,6 +141,10 @@ margin-bottom: 0%;
 {
   background-color: red;
 }
+.color-button >a
+{
+  color: white;
+}
 .section-2 .articles
 {
   display: grid;
@@ -152,8 +158,9 @@ margin-bottom: 0%;
 .article span
 {
   display: flex;
-  width: 40%;
+  width: 95%;
   justify-content: space-between;
+  align-items: center;
   padding: 2%;
   color: gray;
 }
@@ -162,10 +169,17 @@ margin-bottom: 0%;
 {
   width: 100%;
 }
-.article> p,h4,span
+.article> h3,p
 {
   padding: 3%;
-  
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+.article p
+{
+  color: gray;
 }
 .article
 {
@@ -174,18 +188,7 @@ margin-bottom: 0%;
   font-size:1.5vw;
  
 }
-.article >p
-{
-  border: 1px solid black;
-  width: 50%;
-  text-align: center;
-  margin-left: 10px;
-  border-radius: 8px;
-}
-.match-span
-{
-  width: 100%;
-}
+
 .view-all button
 {
   display: none;
@@ -240,6 +243,32 @@ footer .foot-box
     font-weight: 700;
    
   }
+
+  .button {
+    width: 120px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-style: italic;
+    font-size: 10px;
+  }
+
+  .button-2 {
+    color: #fff;
+    border: 2px solid #c266d3;
+    background-image: -webkit-linear-gradient(30deg, #f37d10 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #e92a1d 50%, transparent 50%);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+  }
   .section-2 .nav
   {
     display: flex;
@@ -266,49 +295,53 @@ footer .foot-box
   }
 
   .section-2 .articles
-{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  column-gap: 20px;
-  row-gap: 20px;
-  padding: 0%;
-  width:100%;
-}
-
-.article span
-{
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  padding: 2%;
-  color: gray;
-}
-
-.article img
-{
-  width: 100%;
-}
-.article> p,h4,span
-{
-  padding: 3%;
+  {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0%;
+    width: 100%;
+  }
   
-}
-.article
-{
-  border:1px solid  rgb(197, 181, 181);
-  border-radius: 10px;
-  font-size:1.5vw;
- 
-}
-.article >p
-{
-  border: 1px solid black;
-  width: 50%;
-  text-align: center;
-  margin-left: 10px;
-  border-radius: 8px;
-}
-
+  .article span
+  {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    color: gray;
+  }
+  
+  .article img
+  {
+    width: 100%;
+  }
+  .article> h3
+  {
+    padding: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  
+  .article p
+  {
+    color: gray;
+    padding: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 45%;
+  }
+  .article
+  {
+    border:1px solid  rgb(197, 181, 181);
+    border-radius: 10px;
+    font-size:1.5vw;
+   
+  }
+  
 .view-all button
 {
   display: block;
@@ -320,12 +353,23 @@ footer .foot-box
   color: white;
   border: none;
 }
+
+footer
+{
+  background-color: black;
+  color: #B9B9B9;
+  text-align: center;
+  height: 900px;
+  margin-top: 30px;
+}
+
 footer .foot-box
 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-size:1.5vw;
+  font-size :1vw;
+  line-height: normal;
 }
   
 }
@@ -335,19 +379,19 @@ footer .foot-box
 {
 
   .button {
-    width: 170px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    width: 100px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: center;
     color: #000;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 100;
     margin-left: 0px;
     margin-bottom: 30px;
     cursor: pointer;
     display: inline-block;
     font-style: italic;
-    font-size: 15px;
+    font-size: 8px;
   }
   .button-2 {
     color: #fff;
@@ -405,9 +449,10 @@ footer .foot-box
   }
   .section-2 .nav button
   {
-    height: 80px;
+    height: 90px;
     width: 120px;
     border-radius: 8px;
+    font-size: 1.5vw;
     border: none;
     border: 1px solid rgb(165, 153, 153);
     
@@ -416,57 +461,72 @@ footer .foot-box
   }
 
   .section-2 .articles
-{
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-  column-gap: 20px;
-  row-gap: 20px;
-  padding: 0%;
-  width:100%;
-}
-
-.article span
-{
-  display: flex;
-  width: 40%;
-  justify-content: space-between;
-  padding: 2%;
-  color: gray;
-}
-
-.article img
-{
-  width: 100%;
-}
-.article> p,h4
-{
- margin-right: auto;
- width: 60%;
+  {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 0%;
+    margin-right: auto;
+    margin-left:auto ;
+    width: 90%;
+  }
   
-}
-.article
+  .article span
+  {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    color: gray;
+  }
+  
+  .article img
+  {
+    width: 42%;
+  }
+  .article> h3
+  {
+    padding: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 32%;
+  }
+  
+  .article p
+  {
+    color: gray;
+    padding: 3%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 26%;
+  }
+  .article
+  {
+    border:1px solid  rgb(197, 181, 181);
+    border-radius: 10px;
+    font-size:1.5vw;
+   
+  }
+
+  footer
 {
-  border:1px solid  rgb(197, 181, 181);
-  border-radius: 10px;
-  font-size:1.5vw;
- 
-}
-.article >p
-{
-  border: 1px solid black;
-  width: 50%;
+  background-color: black;
+  color: #B9B9B9;
   text-align: center;
-  margin-left: 10px;
-  border-radius: 8px;
+  height: 600px;
+  margin-top: 30px;
 }
+
 footer .foot-box
 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-size:300px;
-  
+  font-size :1vw;
+  line-height: normal;
 }
   
 }
